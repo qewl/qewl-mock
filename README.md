@@ -18,7 +18,11 @@ route.use(
 
 Adds mocking to a GraphQL schema. Uses [`addMockFunctionsToSchema`](https://www.apollographql.com/docs/graphql-tools/mocking.html) from `graphql-tools`.
 
+> **Note**: The `preserveResolvers` setting only applies to the resolvers in your original schema. Any resolvers you add using the Qewl `resolve` function will override the mock functions. This allows for optimal control over your resolvers.
+
 Uses [Faker.js](https://github.com/marak/Faker.js/) for default mock values for `Number`, `Float` and `String`.
+
+You can use `qewl-mock` together with Qewl GraphQL middleware functions to add additional processing to the mocked results, just like normal queries.
 
 ## Example
 
