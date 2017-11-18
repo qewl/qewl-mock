@@ -1,0 +1,48 @@
+{
+  "name": "qewl-mock",
+  "description": "Mocking middleware for Qewl",
+  "version": "0.1.0",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "rm -rf dist && tsc",
+    "lint": "tslint ./src/**/*.ts",
+    "prettier": "prettier --single-quote --semi false --print-width 90 --write ./src/**/*.ts"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "license": "MIT",
+  "author": "Kim Brandwijk <kim.brandwijk@gmail.com>",
+  "homepage": "https://github.com/kbrandwijk/qewl-mock#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kbrandwijk/qewl-mock.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kbrandwijk/qewl-mock/issues"
+  },
+  "keywords": [
+    "graphql",
+    "mocking",
+    "express-middleware",
+    "qewl"
+  ],
+  "files": [
+    "dist",
+    "package.json",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "graphql": "^0.11.7"
+  },
+  "dependencies": {
+    "graphql-tools": "^2.7.2"
+  },
+  "devDependencies": {
+    "@types/graphql": "^0.11.6",
+    "@types/node": "^8.0.52",
+    "graphql": "^0.11.7",
+    "prettier": "1.8.2",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.1"
+  }
+}
