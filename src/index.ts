@@ -10,7 +10,6 @@ export const mock = ({ schema, mocks = {}, preserveResolvers = false }: { schema
 
     const defaultMocks = {
       ID: () => cuid(),
-      DateTime: () => faker.date.recent(),
       Int: () => faker.random.number(100),
       Float: () => faker.random.number({precision: 0.1}),
       String: () => faker.random.words(faker.random.number(4)),

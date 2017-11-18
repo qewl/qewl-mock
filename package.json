@@ -1,7 +1,7 @@
 {
   "name": "qewl-mock",
   "description": "Mocking middleware for Qewl",
-  "version": "0.1.4",
+  "version": "0.1.7",
   "scripts": {
     "prepublish": "npm run build",
     "build": "rm -rf dist && tsc",
