@@ -12,7 +12,7 @@ $ yarn add qewl-mock
 
 ```ts
 route.use(
-  mock({ schema: 'schemaName', mocks: {...}, preserveResolvers: true | false })
+  mock({ schema: 'schemaName', mocks?: {...}, preserveResolvers?: true | false })
 )
 ```
 

@@ -4,7 +4,7 @@ import { GraphQLSchema } from 'graphql'
 import { merge } from 'lodash'
 import * as faker from 'faker'
 
-export const mock = ({ schema, mocks, preserveResolvers = false }: { schema: string; mocks: IMocks, preserveResolvers: boolean }) => {
+export const mock = ({ schema, mocks = {}, preserveResolvers = false }: { schema: string; mocks: IMocks, preserveResolvers: boolean }) => {
   return (req: any, res: any, next: any): any => {
 
     const defaultMocks = {
